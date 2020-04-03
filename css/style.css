@@ -1,0 +1,62 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+}
+
+main {
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+.header {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+	display: flex;
+	left: 0;
+	padding: 1.5rem 1rem;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.logo {
+	color: azure;
+	font-size: 1.5rem;
+	margin: auto;
+}
+
+#vrview {
+	height: 100%;
+	width: 100%;
+}
+
+.modal {
+	background: azure;
+	border-radius: 0.5rem;
+	left: 50%;
+	max-width: 200px;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -40%);
+	width: 90%;
+	opacity: 0;
+	padding: 1rem;
+	pointer-events: none;
+	transition: all 0.5s;
+	z-index: 999;
+}
+
+.modal.visible {
+	opacity: 1;
+	pointer-events: initial;
+}

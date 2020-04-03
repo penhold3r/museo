@@ -52,7 +52,7 @@ domReady(() => {
 		}
 	]
 	const vrView = new VRView.Player('#vrview', {
-		image: './images/pier.jpg',
+		image: 'images/pier.jpg',
 		is_stereo: false,
 		width: '100%',
 		height: '100%'
